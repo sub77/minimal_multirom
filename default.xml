@@ -57,6 +57,8 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  groups="pdk,linux" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
+  <project path="prebuilts/misc" name="prebuilts_misc" remote="mr" revision="mm6.0" />
+
   <project path="system/core" name="SlimRoms/android_system_core" remote="github" revision="mm6.0" />
   <project path="system/extras" name="android_system_extras" remote="slim" />
   <project path="system/netd" name="android_system_netd" remote="slim" />
