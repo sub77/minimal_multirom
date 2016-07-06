@@ -24,21 +24,21 @@
   <remote  name="tipsy"
            fetch="https://github.com/TipsyOs"
            revision="6.0" />
-           
+
   <remote  name="multirom"
            fetch="https://github.com/Tasssadar" />
 
   <remote  name="mr"
            fetch="https://github.com/MR-op3" />
 
-  <default revision="refs/tags/android-6.0.1_r43"
+  <default revision="refs/tags/android-6.0.1_r46"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="tipsy" >
+  <project path="build" name="tipsy_build" remote="tipsy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="bionic" remote="tipsy" />
+  <project path="bionic" name="android_bionic" remote="tipsy" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/qcom/common" name="device_qcom_common" remote="slim" />
   <project path="frameworks/native" name="frameworks_native" remote="tipsy" />
@@ -55,14 +55,12 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  groups="pdk,linux" />
-  <project path="prebuilts/misc" name="prebuilts_misc" groups="pdk" remote="slim" />
-  <project path="prebuilts/ndk" name="prebuilts_ndk" groups="pdk" remote="slim" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
-  <project path="system/core" name="system_core" remote="slim" />
+  <project path="system/core" name="SlimRoms/android_system_core" remote="github" revision="mm6.0" />
   <project path="system/extras" name="android_system_extras" remote="slim" />
   <project path="system/netd" name="android_system_netd" remote="slim" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="slim" />
-
 
   <project path="vendor/tipsy" name="vendor_tipsy" remote="tipsy" />
  
@@ -104,8 +102,6 @@
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
-
-
 
 <!-- ADD IN TWRP & MULTIROM REPOS  -->
   <project name="android_bootable_recovery" path="bootable/recovery" remote="mr" revision="android-6.0-mrom" />
