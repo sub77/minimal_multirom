@@ -117,5 +117,9 @@
   <project name="device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="mr" revision="mr"/>
   <project name="kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="mr" revision="toxic" />
 
+<!-- EXTRA -->
+  <project name="extra" path="extra" remote="mr" revision="mr" />
+
+
 
 </manifest>
