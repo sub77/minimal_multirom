@@ -49,9 +49,11 @@
 
   <project path="prebuilts/clang/linux-x86/host/3.6" name="platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="DespairFactor/arm-linux-androideabi-4.9" remote="bb" revision="master" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="UBERTC/aarch64-linux-android-4.9-kernel" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  groups="pdk,linux" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
@@ -116,6 +118,8 @@
   <project name="slim-opt/device_oppo_common" path="device/oppo/common" remote="github" revision="test" />
   <project name="device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="mr" revision="mr"/>
   <project name="kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="mr" revision="toxic" />
+  <project name="device_oneplus_onyx" path="device/oneplus/onyx" remote="mr" revision="mr" />
+  <project name="kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="mr" revision="mr" />
 
 <!-- EXTRA -->
   <project name="extra" path="extra" remote="mr" revision="mr" />
