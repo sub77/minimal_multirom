@@ -35,7 +35,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="tipsy_build" remote="tipsy" >
+  <project path="build" name="tipsy_build" remote="mr" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="android_bionic" remote="slim" />
