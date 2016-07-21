@@ -31,11 +31,11 @@
   <remote  name="mr"
            fetch="https://github.com/MR-op3" />
 
-  <default revision="refs/tags/android-6.0.1_r46"
+  <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="tipsy_build" remote="mr" >
+  <project path="build" name="tipsy_build" remote="mr" revision="mr" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="android_bionic" remote="slim" />
