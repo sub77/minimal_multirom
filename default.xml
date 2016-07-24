@@ -106,7 +106,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
 
 <!-- ADD IN TWRP & MULTIROM REPOS  -->
-  <project name="android_bootable_recovery" path="bootable/recovery" remote="mr" revision="android-6.0-mrom" />
+  <project name="android_bootable_recovery" path="bootable/recovery" remote="mr" revision="mr" />
   <project name="multirom" path="system/extras/multirom" remote="mr" revision="master" />
   <project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="mr" revision="master" />
   <project name="libbootimg" path="system/extras/libbootimg" remote="multirom" revision="master" />
