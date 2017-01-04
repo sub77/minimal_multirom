@@ -32,7 +32,7 @@
            fetch="https://github.com/MR-op3" />
 
   <remote  name="sub"
-           fetch="git://github.com/sub77" />
+           fetch="git@github.com:sub77" />
   
   <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
@@ -116,9 +116,8 @@
   <project name="multirom_adbd" path="system/extras/multirom/adbd" remote="multirom" revision="master" />
 
 <!-- ADD IN DEVICE-SPECIFIC REPOS  -->
-<project name="yeshwanthvshenoy/android_device_motorola_athene" path="device/motorola/athene" remote="github" revision="mr-7.0"/>
-<project name="android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="mrom/mr-7.0"/>
-<project name="android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="twrp/android-7.1"/>
+  <project name="android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="mrom/mr-7.0"/>
+  <project name="android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="twrp/android-7.1"/>
 
 <!-- EXTRA -->
   <project name="extra" path="extra" remote="mr" revision="mr" />
