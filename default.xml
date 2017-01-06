@@ -112,7 +112,7 @@
   <project name="OmniROM/android_bootable_recovery" path="bootable/recovery" remote="github" revision="android-7.1" />
 
 <!-- ADD IN DEVICE-SPECIFIC REPOS  -->
-  <project name="sub77/android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="mrom/mr-7.0"/>
-  <project name="sub77/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="twrp/android-7.1"/>
+  <project name="sub77/android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="tmp/twrp/twrp-6.0-wifi"/>
+  <project name="sub77/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="tmp/twrp/twrp-6.0-wifi"/>
 
 </manifest>
